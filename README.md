@@ -1,1 +1,1 @@
-.
+Stalberg Project

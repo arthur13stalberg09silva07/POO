@@ -39,3 +39,13 @@ jobs:
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+        
+  # You may pin to the exact commit or the version.
+  # uses: rakib4kbd/python-build@bd7f5c7a08ea3513f07bc79b35685ef0829951b4
+    - uses: rakib4kbd/python-build@v0.1
+      name: Validate, Build, Test and Deploy
+      with:
+    # List the python versions eg. [3.8]
+        python-version: 3.8 # default is [3.8]
+    # List the poetry versions eg. [1.1.12]
+        poetry-version: 1.1.12 # default is ["1.1.12"]
